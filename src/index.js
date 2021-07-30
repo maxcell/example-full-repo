@@ -1,4 +1,4 @@
-import greeting from './greeting'
+import {getGreeting} from './greeting.js'
 
 
-console.log(greeting())
+console.log(getGreeting())
