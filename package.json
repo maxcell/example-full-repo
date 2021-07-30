@@ -1,12 +1,20 @@
 {
   "name": "example-full-repo",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "This is going to represent following through the Modern JavaScript Tooling with React course by Andy Van Slaars.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxcell/example-full-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/maxcell/example-full-repo/issues"
+  },
+  "homepage": "https://github.com/maxcell/example-full-repo#readme"
 }
