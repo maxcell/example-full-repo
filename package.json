@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "This is going to represent following through the Modern JavaScript Tooling with React course by Andy Van Slaars.",
   "main": "index.js",
+  "browserslist": "> 0.25%, not dead",
   "scripts": {
     "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"

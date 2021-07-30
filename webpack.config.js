@@ -12,27 +12,11 @@ module.exports = {
       {
         test: /.m?js$/,
         exclude: /(node_modules)/,
-        include: [
-          path.resolve(__dirname, 'src')
-        ],
         loader: 'babel-loader',
         options: {
           presets: ['@babel/preset-env']
         }
       }
-      // Are these the same?
-      // Do either actually run with the preset?
-      // {
-      //   test: /\.m?js$/,
-      //   exclude: /(node_modules)/,
-      //   use: [{
-      //       loader: 'babel-loader', 
-      //       options: {
-      //         presets: ['@babel/preset-env']
-      //       }
-      //     },
-      //   ]
-      // }
     ]
   }
 }
