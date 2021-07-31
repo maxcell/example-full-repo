@@ -1,4 +1,6 @@
-import {getGreeting} from './greeting.js'
+import * as React from 'react'
+import ReactDOM from 'react-dom'
 
+import {App} from './App'
 
-console.log(getGreeting())
+ReactDOM.render(<App />, document.getElementById('app'))
