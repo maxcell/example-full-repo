@@ -6,5 +6,14 @@ module.exports = merge(baseConfig, {
   devServer: {
     port: 9002
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+        exclude: /node_modules/
+      }
+    ]
+  }
 })
