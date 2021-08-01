@@ -5,7 +5,6 @@ const {BundleAnalyzerPlugin} = require("webpack-bundle-analyzer")
 
 module.exports = merge(baseConfig, {
   mode: 'production',
-  plugins: [new MiniCssExtractPlugin()],
   module: {
     rules: [
       {
@@ -17,6 +16,11 @@ module.exports = merge(baseConfig, {
   plugins: [
     new BundleAnalyzerPlugin({
       analyzerMode: 'static'
-    })
-  ]
+    }),
+    new MiniCssExtractPlugin()
+  ],
+  externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  }
 })
