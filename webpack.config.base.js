@@ -15,7 +15,14 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel-loader',
         options: {
-          presets: ['@babel/preset-env', "@babel/preset-react"]
+          presets: [['@babel/preset-env', {
+            targets: [
+              "> 0.25%", 
+              "not dead"
+            ],
+            useBuiltIns: "entry",
+            corejs: "3.16.0"
+          }], "@babel/preset-react"]
         }
       }
     ]
